@@ -11,3 +11,8 @@ Generate dataset:
 ```bash
 cookiecutter https://github.com/Remi-Gau/cookiecutter_matlab_analysis.git
 ```
+
+
+You can also use the github template if you prefer:
+
+https://github.com/Remi-Gau/template_matlab_analysis
