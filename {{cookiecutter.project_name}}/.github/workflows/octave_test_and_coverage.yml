@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 1
 
       - name: MOxUnit Action
-        uses: joergbrech/moxunit-action@v1.1
+        uses: joergbrech/moxunit-action@v1.2.0
         with:
           tests: tests
           src: src
@@ -25,9 +25,11 @@ jobs:
           cover_xml_file: coverage.xml
 
       - name: Code coverage
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
         with:
+{% raw %}        
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+{% endraw %}          
           file: coverage.xml # optional
           flags: unittests # optional
           name: codecov-umbrella # optional

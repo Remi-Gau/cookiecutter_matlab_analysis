@@ -23,15 +23,15 @@ jobs:
         os: [ubuntu-latest] # "macos-latest" or "windows-latest" don't work (yet?)
         matlab-version: ["R2020a"] # add more versions if needed: "R2021a"
       fail-fast: false  # Don't cancel all jobs if one fails
-
+{% raw %}
     runs-on: ${{ matrix.os }}
 
     steps:
       - name: Install MATLAB ${{ matrix.matlab-version }}
-        uses: matlab-actions/setup-matlab@v1.0.1
+        uses: matlab-actions/setup-matlab@v1.2.0
         with:
           release: ${{ matrix.matlab-version }}
-
+{% endraw %}
       - uses: actions/checkout@v3
         with:
           submodules: true
@@ -43,7 +43,7 @@ jobs:
           git clone https://github.com/MOcov/MOcov.git --depth 1
 
       - name: Run tests
-        uses: matlab-actions/run-command@v1.0.1
+        uses: matlab-actions/run-command@v1.1.0
         with:
           command:
             cd(fullfile(getenv('GITHUB_WORKSPACE'), '.github', 'workflows'));
@@ -55,7 +55,7 @@ jobs:
           bash <(curl -s https://codecov.io/bash)
 
       - name: Code coverage
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v3
         with:
           file: coverage.xml # optional
           flags: matlab # optional
