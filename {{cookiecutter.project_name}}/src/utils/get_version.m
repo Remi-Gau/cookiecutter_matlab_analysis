@@ -9,7 +9,7 @@ function version_number = get_version()
     %
     % :returns: - :version_number: (string) Use semantic versioning format (like v0.1.0)
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     try
         version_number = fileread(getRootDir(), 'version.txt');

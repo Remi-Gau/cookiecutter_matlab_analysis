@@ -1,6 +1,6 @@
 function test_suite = test_my_fibonacci %#ok<*STOUT>
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     try % assignment of 'localfunctions' is necessary in Matlab >= 2016
         test_functions = localfunctions(); %#ok<*NASGU>

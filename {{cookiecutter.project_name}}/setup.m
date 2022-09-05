@@ -11,7 +11,7 @@ function setup()
     % - For Octave loads extra packages
     %
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     octave_min_version = '4.0.3';
     matlab_min_version = '8.6.0';

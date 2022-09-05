@@ -1,5 +1,5 @@
 % run tests with code coverage via the run_tests scripts in the root folder.
-% (C) Copyright 2022 Remi Gau
+% (C) Copyright {% now 'local', '%Y' %} Remi Gau
 
 root_dir = getenv('GITHUB_WORKSPACE');
 

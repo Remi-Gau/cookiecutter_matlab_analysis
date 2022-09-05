@@ -6,7 +6,7 @@ function run_tests()
     %
     %   run_tests()
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     tic;
 

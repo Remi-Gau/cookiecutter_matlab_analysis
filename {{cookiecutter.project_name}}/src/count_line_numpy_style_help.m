@@ -21,7 +21,7 @@ function num_instances = count_line_numpy_style_help(file, line)
     %                the number of times the line occurs.
     %
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     % inspired from https://goodresearch.dev/docs.html#write-docstrings
 

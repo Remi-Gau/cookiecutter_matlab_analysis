@@ -16,7 +16,7 @@ function results = my_fibonacci(varargin)
     %     results = my_fibonacci(5);
     %
     %
-    % (C) Copyright 2022 {{ cookiecutter.full_name }}
+    % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     is_positive_integer = @(n) (rem(n, 1) == 0) & (n > 0);
 
