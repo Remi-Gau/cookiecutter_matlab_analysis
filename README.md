@@ -2,9 +2,12 @@
 
 Install Cookiecutter:
 
-    pip install -U cookiecutter
+```bash
+pip install -U cookiecutter
+```
 
 Generate dataset:
 
-        cookiecutter https://github.com/Remi-Gau/cookiecutter_matlab_analysis.git
-
+```bash
+cookiecutter https://github.com/Remi-Gau/cookiecutter_matlab_analysis.git
+```
