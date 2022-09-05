@@ -1,0 +1,10 @@
+channels:
+
+- default
+- conda-forge
+
+dependencies:
+
+- octave_kernel
+- texinfo
+- jupyterlab

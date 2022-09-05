@@ -1,0 +1,9 @@
+{
+  "full_name": "Remi Gau",
+  "email": "remi.gau@uclouvain.be",
+  "github_username": "Remi-Gau",
+  "project_name": "Matlab_Boilerplate",
+  "project_short_description": "Matlab Boilerplate contains all the boilerplate you need to create a MATLAB project.",
+  "version": "0.1.0",
+  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+}

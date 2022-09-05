@@ -1,0 +1,14 @@
+# linting
+miss_hit==0.9.28
+pre-commit
+
+# doc
+Sphinx
+sphinxcontrib-matlabdomain
+sphinx_rtd_theme
+sphinx-copybutton
+myst-parser
+
+# notebooks
+octave_kernel
+jupyterlab

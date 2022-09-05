@@ -1,0 +1,31 @@
+# Check https://citation-file-format.github.io/
+# and the schema doc https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md
+# for more info
+
+cff-version: 1.2.0
+
+title: {{ cookiecutter.project_name }}
+
+version: {{ cookiecutter.version }}
+
+abstract: {{ cookiecutter.project_short_description }}
+
+message: "If you use this software, please cite it as below."
+
+repository-code: "https://github.com/{{ cookiecutter.github_username  }}/{{ cookiecutter.project_name }}"
+
+contact:
+  - email: {{ cookiecutter.email }}
+    family-names: FIXME
+    given-names: FIXME
+
+authors:
+  - family-names: FIXME
+    given-names: FIXME
+
+{% if cookiecutter.open_source_license == 'GNU General Public License v3' -%}
+license: GPL-3.0
+{% endif %}
+
+keywords:
+  - FIXME
