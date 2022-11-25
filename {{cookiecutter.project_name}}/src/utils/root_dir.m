@@ -8,6 +8,7 @@ function retval = root_dir()
     %
     % :returns: - :root_dir: (path)
     %
+
     % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     retval = fullfile(fileparts(mfilename('fullpath')), '..', '..');

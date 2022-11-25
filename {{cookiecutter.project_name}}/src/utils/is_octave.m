@@ -6,7 +6,7 @@ function retval = is_octave
     %
     %   retval = is_octave()
     %
-    %
+
     % (C) Copyright {% now 'local', '%Y' %} {{ cookiecutter.full_name }}
 
     persistent cacheval   % speeds up repeated calls
