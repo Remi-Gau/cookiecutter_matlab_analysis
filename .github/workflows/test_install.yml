@@ -1,0 +1,16 @@
+---
+name: test install
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches: ['*']
+
+jobs:
+  test_install:
+    runs-on: ubuntu-latest
+    steps:
+    - run: pip install cookiecutter
+    - run: cookiecutter --verbose --no-input https://github.com/Remi-Gau/cookiecutter_matlab_analysis.git
