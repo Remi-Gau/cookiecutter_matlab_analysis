@@ -27,9 +27,9 @@ jobs:
       - name: Code coverage
         uses: codecov/codecov-action@v3
         with:
-{% raw %}        
+{% raw %}
           token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
-{% endraw %}          
+{% endraw %}
           file: coverage.xml # optional
           flags: unittests # optional
           name: codecov-umbrella # optional

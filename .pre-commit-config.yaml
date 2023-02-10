@@ -1,0 +1,15 @@
+# See https://pre-commit.com/
+# and https://pre-commit.ci/
+# for details
+
+repos:
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-json
+  - id: check-added-large-files
+  - id: check-case-conflict
+  - id: check-merge-conflict
