@@ -1,9 +1,4 @@
-# See https://pre-commit.com/
-# and https://pre-commit.ci/
-# for details
-
 repos:
-
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0
   hooks:
@@ -13,3 +8,7 @@ repos:
   - id: check-added-large-files
   - id: check-case-conflict
   - id: check-merge-conflict
+ci:
+  autoupdate_commit_msg: 'chore: update pre-commit hooks'
+  autoupdate_schedule: monthly
+  autofix_commit_msg: 'style: pre-commit fixes'
